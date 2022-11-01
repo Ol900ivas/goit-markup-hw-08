@@ -1,0 +1,35 @@
+@import './utils/vars.scss';
+@import './utils/plaseholders';
+@import './base/reset';
+@import './base/common';
+@import './utils/visually-hidden';
+@import './utils/current';
+
+@import './components/container';
+@import './components/section';
+@import './components/logo';
+@import './components/nav';
+@import './components/contacts';
+
+@import './components/buttons/button';
+@import './components/buttons/close-button';
+@import './components/buttons/btn';
+
+@import './components/main-title';
+@import './components/soc-list';
+@import './components/modal';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+
+@import './components/call-text';
+@import './components/address';
+@import './components/subscription-form';
+
+@import './layout/portfolio';
+@import './components/portfolio-card';

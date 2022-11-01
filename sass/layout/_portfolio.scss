@@ -1,0 +1,19 @@
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    width: calc((100% - 30px * 2) / 3);
+  }
+}

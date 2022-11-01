@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--dark-background-color);
+
+  &__address-wrap {
+    margin-right: 70px;
+  }
+
+  &__soc-list-wrap {
+    margin-right: auto;
+  }
+}

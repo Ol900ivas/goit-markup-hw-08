@@ -1,0 +1,30 @@
+.contacts {
+  @extend %align-list;
+  gap: 50px;
+
+  &__item {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+
+    transition: color var(--duration) var(--timing-function);
+  }
+  &__item:hover,
+  &__item:focus {
+    color: var(--accent-color);
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.header__contacts {
+  margin-left: auto;
+}
