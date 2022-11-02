@@ -1,5 +1,5 @@
 .hero {
-    padding: 200px 0;
+    padding: 118px 0;
     margin: 0 auto;
     text-align: center;
 
@@ -8,5 +8,9 @@
         url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 1200px) {
+            padding: 200px 0;
+        }
 }
 
