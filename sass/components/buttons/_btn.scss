@@ -18,6 +18,10 @@
     background-color var(--duration) var(--timing-function),
     box-shadow var(--duration) var(--timing-function);
 
+  &--all {
+    padding: 6px 25px;
+  }  
+
   &:hover,
   &:focus {
     color: var(--light-text-color);
