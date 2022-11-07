@@ -1,15 +1,40 @@
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--dark-background-color);
 
   &__address-wrap {
-    margin-right: 70px;
+    margin-bottom: 60px;
+    text-align: center;
+    @include tablet {
+      margin-right: 165px;
+      margin-bottom: 0;
+    }
+    @include desktop {
+      margin-right: 70px;
+      text-align: start;
+    }
   }
 
   &__soc-list-wrap {
-    margin-right: auto;
+    text-align: center;
+    @include desktop {
+      text-align: start;
+    }
+  }
+
+  &__add-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 60px;
+
+    @include tablet {
+      flex-direction: row;
+    }
+    @include desktop {
+      padding-bottom: 0;
+    }
   }
 }

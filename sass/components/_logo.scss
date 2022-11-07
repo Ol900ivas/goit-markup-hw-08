@@ -3,8 +3,9 @@
 
   font-family: var(--logo-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
   &__part--dark {
@@ -13,10 +14,18 @@
   &__part--light {
     color: var(--light-text-color);
   }
+@media screen and (min-width: 1200px) {
+  font-size: 26px;
+  line-height: 1.19;
+}
+    
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
+  @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
 }
 
 .footer__logo {

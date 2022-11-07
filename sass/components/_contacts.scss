@@ -1,11 +1,22 @@
 .contacts {
+  display: none;
   @extend %align-list;
-  gap: 50px;
-
+  column-gap: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    }
+  
   &__item {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
 
     font-weight: 500;
@@ -14,6 +25,7 @@
     color: inherit;
 
     transition: color var(--duration) var(--timing-function);
+
   }
   &__item:hover,
   &__item:focus {

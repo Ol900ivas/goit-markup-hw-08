@@ -4,6 +4,11 @@
   top: 0;
   width: 100%;
   height: 100%;
+  padding-left: 15px;
+  padding-right: 12px;
+  padding-top: 93px;
+
+  overflow-y: scroll;
 
   opacity: 1;
   visibility: visible;
@@ -13,42 +18,51 @@
     visibility var(--duration) var(--timing-function);
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.8);
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 528px;
-  height: 581px;
-
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  
   padding: 40px;
   background-color: var(--light-background-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--duration) var(--timing-function);
+  
+  
+
+  @include mobile {
+    max-height: 609px;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      transition: transform var(--duration) var(--timing-function);
+  }
+
+  @include desktop {
+    max-width: 528px;
+      max-height: 581px;
+  }
 
   &__title {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--second-text-color);
+
+    @include desktop {
+      line-height: 1.15;
+    }
   }
 }
 
@@ -63,7 +77,7 @@
     margin-bottom: 4px;
 
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.01em;
 
     color: var(--main-text-color);
@@ -116,17 +130,24 @@
   }
 
   &__input::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     color: var(--input-placeholder);
+    @include desktop {
+      font-size: 12px;
+        line-height: 1.17;
+    }
   }
 
   &__agreement {
     display: flex;
     align-items: center;
-    margin-left: 12px;
+    
     margin-bottom: 30px;
+    @include desktop {
+margin-left: 12px;
+    }
   }
 
   &__check-icon {
@@ -147,6 +168,15 @@
     background-color: var(--accent-color);
     fill: var(--light-text-color);
     border-color: transparent;
+  }
+
+  &__check-text {
+    font-size: 12px;
+      line-height: 1.17;
+       @include desktop {
+        font-size: 14px;
+        line-height: 1.71;
+      }
   }
 
   &__agreement-link {

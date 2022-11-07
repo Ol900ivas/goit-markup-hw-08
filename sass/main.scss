@@ -1,15 +1,16 @@
 @import './utils/vars.scss';
 @import './utils/plaseholders';
+@import './utils/mixin';
 @import './base/reset';
 @import './base/common';
-@import './utils/visually-hidden';
-@import './utils/current';
+
 
 @import './components/container';
 @import './components/section';
 @import './components/logo';
 @import './components/nav';
 @import './components/contacts';
+@import './components/mob-menu';
 
 @import './components/buttons/button';
 @import './components/buttons/close-button';
@@ -19,6 +20,7 @@
 @import './components/soc-list';
 @import './components/modal';
 
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/advantages';
@@ -26,6 +28,8 @@
 @import './layout/team';
 @import './layout/clients';
 @import './layout/footer';
+@import './utils/hidden';
+@import './utils/current';
 
 @import './components/call-text';
 @import './components/address';
