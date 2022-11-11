@@ -5,8 +5,13 @@
 
   background-color: var(--hero-background-color);
   background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
+  @media screen and (max-width: 479px) {
+    background-size: cover;
+  }
+
   @include retina {
     background-image: var(--bg-gradient), url(../images/hero-bg-mob-2x.jpg);
   }
@@ -22,5 +27,5 @@
     @include retina {
       background-image: var(--bg-gradient), url(../images/hero-bg-desk-2x.jpg);
     }
-  } 
+  }
 }

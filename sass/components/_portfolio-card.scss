@@ -1,7 +1,9 @@
 .portfolio-card {
   position: relative;
-  display: block;
-  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  // display: block;
+  height: 100%;
 
   transition: box-shadow var(--duration) var(--timing-function);
 
@@ -22,15 +24,15 @@
     left: 0;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
 
-    @extend %align-list;
+    display: flex;
     padding-left: 24px;
     padding-right: 24px;
-   
 
     background-color: var(--overlay-color);
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform var(--duration) var(--timing-function);
   }
 
@@ -47,7 +49,8 @@
   }
 
   &__caption {
-    height: 100%;
+    flex-grow: 1;
+    // height: 100%;
     padding: 20px 24px;
     border: 1px solid var(--border-color);
     border-top: transparent;

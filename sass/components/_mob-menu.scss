@@ -1,71 +1,35 @@
-.mob-menu__btn {
-    @extend %align-list;
-    justify-content: center;
-    margin-left: auto;
-    border: none;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    background-color: var(--light-background-color);
-    cursor: pointer;
-
-    transition: fill var(--duration) var(--timing-function);
-
-    &:hover,
-    &:focus,
-    &:active {
-        fill: var(--accent-color);
-    }
-
-    @media screen and (min-width: 768px) {
-        display: none;
-
-    }
-}
-
-
 .mob-menu {
-    position: fixed;
-    top: 0;
-    background: var(--light-background-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
-    padding-right: 15px;
-    overflow: auto;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  background: var(--light-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 15px;
+  overflow: auto;
+  z-index: 1;
 
-           transition: opacity var(--duration) var(--timing-function),
-            visibility var(--duration) var(--timing-function);
+  transition: opacity var(--duration) var(--timing-function),
+    visibility var(--duration) var(--timing-function);
 
-    @media screen and (min-width: 768px) {
-            display: none;
-                
-        }
-}
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
-
-.mob-menu__btn--close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-
-}
-
-.mob-menu__list {
+  &__list {
     margin-bottom: 50px;
-}
+  }
 
-.mob-menu__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-bottom: 32px;
-}
+  }
 
-.mob-menu__link {
+  &__link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
@@ -75,18 +39,18 @@
     margin-bottom: 32px;
 
     transition: color var(--duration) var(--timing-function);
-    
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
-}
+  }
 
-.mob-menu__contacts {
+  &__contacts {
     margin-bottom: 64px;
-}
+  }
 
-.mob-menu__tel {
+  &__tel {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
@@ -95,9 +59,9 @@
     color: var(--accent-color);
     display: block;
     margin-bottom: 32px;
-}
+  }
 
-.mob-menu__mail {
+  &__mail {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
@@ -106,37 +70,30 @@
     color: var(--main-text-color);
 
     transition: color var(--duration) var(--timing-function);
-    
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
-}
 
-.mob-menu__soc-list {
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__soc-list {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-}
+  }
 
-.mob-menu__soc-item:not(:last-child) {
+  &__soc-item:not(:last-child) {
     margin-right: 5px;
-}
+    padding-right: 5px;
+    border-right: 1px solid var(--input-border);
+  }
 
-.mob-menu__soc-link {
+  &__soc-link {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-}
-
-.mob-menu__soc-link::before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-    height: 22px;
-    width: 1px;
-    background-color: var(--input-border);
+  }
 }

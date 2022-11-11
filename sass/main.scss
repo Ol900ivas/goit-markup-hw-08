@@ -1,9 +1,8 @@
 @import './utils/vars.scss';
-@import './utils/plaseholders';
+@import './utils/plaseholder';
 @import './utils/mixin';
 @import './base/reset';
 @import './base/common';
-
 
 @import './components/container';
 @import './components/section';
@@ -11,6 +10,7 @@
 @import './components/nav';
 @import './components/contacts';
 @import './components/mob-menu';
+@import './components/buttons/mob-menu__btn';
 
 @import './components/buttons/button';
 @import './components/buttons/close-button';
@@ -19,7 +19,6 @@
 @import './components/main-title';
 @import './components/soc-list';
 @import './components/modal';
-
 
 @import './layout/header';
 @import './layout/hero';

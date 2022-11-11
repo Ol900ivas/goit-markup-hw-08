@@ -6,7 +6,7 @@
   &--background {
     background-color: var(--semi-light-background-color);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -23,11 +23,10 @@
     text-align: center;
     color: var(--second-text-color);
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
-        font-size: 36px;
-        line-height: 1.17;
-      }
+    @include desktop {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
-
 }

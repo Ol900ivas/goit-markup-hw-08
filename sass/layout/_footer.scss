@@ -8,19 +8,23 @@
     margin-bottom: 60px;
     text-align: center;
     @include tablet {
-      margin-right: 165px;
+      // margin-right: 165px;
       margin-bottom: 0;
     }
     @include desktop {
-      margin-right: 70px;
+      // margin-right: 70px;
       text-align: start;
     }
   }
 
   &__soc-list-wrap {
     text-align: center;
+    @include tablet {
+      margin-left: 165px;
+    }
     @include desktop {
       text-align: start;
+      margin-left: 70px;
     }
   }
 
@@ -28,13 +32,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 
     @include tablet {
       flex-direction: row;
     }
     @include desktop {
-      padding-bottom: 0;
+      margin-bottom: 0;
+      align-items: baseline;
     }
   }
 }

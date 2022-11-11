@@ -1,0 +1,29 @@
+.mob-menu__btn {
+  @extend %align-list;
+  justify-content: center;
+  margin-left: auto;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: var(--light-background-color);
+  cursor: pointer;
+
+  transition: fill var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-menu__btn--close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
